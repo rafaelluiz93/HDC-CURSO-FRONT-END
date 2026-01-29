@@ -1,0 +1,40 @@
+/*2 - MEDIA QUERY*/
+h1{
+    color: red;
+}
+
+@media screen and (max-width: 500px){
+    h1{
+        color: blue;
+    }
+}
+
+/*3 - MIN WIDTH*/
+p{
+    background-color: red;
+    color: #000;
+}
+
+@media screen and (min-width: 800px) {
+    p{
+        background-color: #789;
+        color: red;
+    }    
+}
+
+/*4 - PADRÃO DE BREAKPOINTS*/
+.gpt-image{
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*5 - LANDSCAPE*/
+h3{
+    display: none;
+}
+
+@media screen and (orientation: landscape) {
+    h3{
+        display: block;
+    }
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS</title>
+        <!-- 3 - INTERNAL CSS-->
+        <style>
+            p{
+                color: orange;
+                font-size: 40px;
+            }
+        </style>
+        <!-- 4 - EXTERNAL CSS-->
+        <link rel="stylesheet" href="css/styles.css" />
+        <!-- 6.2 - Múltiplos arquivos CSS-->
+        <link rel="stylesheet" href="css/lists.css" />
+    </head>
+    <body>
+        <!-- 1 - INLINE CSS-->
+         <h1 style="color:red">Mudar cor com INLINE</h1>
+         <h1 style="color:blue">Outro título</h1>
+
+        <!-- 2 - MÚLTIPLAS REGRAS-->
+        <h1 style="color:purple; font-size: 40px; border-bottom: 1px solid red;">
+            Mudar cor e tamanho da fonte
+        </h1>
+
+        <!-- 3.1 INTERNAL CSS-->
+        <p>Estilização com INTERNAL CSS</p>
+        <p>Estilização com INTERNAL CSS 2</p>
+        <p>Estilização com INTERNAL CSS 3</p>
+
+        <!-- 45 - POSITION: STICKY-->
+        <div class="sticky">
+            <span>Exemplo STICKY</span>
+        </div>
+
+        <!-- 4.1 - EXTERNAL CSS-->
+        <h3>Estilizado com EXTERNAL CSS</h3>
+
+        <!-- 5 - Ordem do CSS: INLINE > INTERNAL = EXTERNAL (VALE O QUE FOI CARREGADO POR ÚLTIMO NO CABEÇALHO)-->
+        <p style="color: red;">Ordem do CSS</p>
+        <p>Ordem do CSS 2</p>
+
+        <!-- 6 - Múltiplos arquivos CSS-->
+        <ul>
+            <li>Banana</li>
+            <li>Maçã</li>
+            <li>Abacate</li>
+        </ul>
+
+        <!-- 7 - Classes-->
+        <p class="paragraph">Parágrafo 1</p>
+        <p class="paragraph">Parágrafo 2</p>
+        <p class="paragraph">Parágrafo 3</p>
+
+        <!-- 8 - ID-->
+        <h1 id="exclusive-title">Título exclusivo</h1>
+
+        <!-- 9 - ORDEM DOS SELETORES: ID > CLASS > TAG -->
+        <h2 id="algum-titulo" class="titulo">ID + CLASSE</h2>
+        <h2 class="titulo">CLASSE</h2>
+        <h2>TAG</h2>
+
+        <!-- 10 - CORES: NOMES -->
+        <p class="color-name">TEXTO / COR</p>
+
+        <!-- 11 - CORES: HEX -->
+        <p class="hex">TEXTO / HEX</p>
+        <p class="hex-2">TEXTO / HEX 2</p>
+
+        <!--12 - CORES: RGB (SINTAXE: rgb (n,n,n))--->
+        <!--13 - CORES: RGBA (SINTAXE: rgba (n,n,n,n))--->
+        <!--14 - CORES: HSL (SINTAXE: hsl (n,%,%))--->
+
+        <!--15 BACKGROUND COLOR--->
+        <p class="bg">Mudar cor de fundo</p>
+        <h2 class="bg-2">Outra variação de BG</h2>
+
+        <!-- 16 - BACKGROUND: OPACITY -->
+        <div class="bg-opacity">
+            <p>Texto I</p>
+        </div>
+
+        <!-- 17 - BACKGROUND: OPACITY | RGBA -->
+        <div class="rgba-opacity">
+            <h1>Este título precisa de visibilidade</h1>
+        </div>
+
+        <!-- 18 - BACKGROUND: IMAGES -->
+        <h1 class="bg-image">O título tem uma imagem</h1>
+
+        <!-- 19 - BACKGROUND: CENTER -->
+        <div class="not-centered-bg"></div>
+        <div class="centered-bg"></div>
+
+        <!-- 20 - BOX MODEL: HEIGHT / WIDTH-->
+        <div class="height-width"></div>
+        <div class="height-width-2"></div>
+        
+        <!-- 21 - BOX MODEL: PADDING-->
+        <div class="sem-padding">SEM PADDING</div>
+        <div class="com-padding">COM PADDING</div>
+      
+      	<!-- 22 - BOX MODEL: PADDING INDIVIDUAL-->
+        <p class="padding-individual">Elemento com paddings diferentes</p>
+      
+      	<!-- 23 - BOX MODEL: SHORTHAND PROPERTIES-->
+      	<p class="shorthand-padding">Algum texto</p>
+      	<p class="shorthand-padding-2">Algum texto 2</p>
+
+        <!-- 24 - BOX MODEL: PADDING + WIDTH-->
+        <div class="sem-border-box">
+            <p>SEM border box</p>
+        </div>
+        <div class="com-border-box">
+            <p>COM border box</p>
+        </div>
+
+        <!-- 25 - BOX MODEL: BORDAS-->
+        <div class="border-1">
+            <p>Borda 1</p>
+        </div>
+        <div class="border-2">
+            <p>Borda 2</p>
+        </div>
+
+        <!-- 26 - BOX MODEL: BORDA INDIVIDUAL-->
+        <p class="border-left">Borda esquerda</p>
+        <p class="border-bottom">Borda inferior</p>
+
+        <!-- 27 - BOX MODEL: BORDA REDONDA-->
+        <div class="rounded">Arredondamento 1</div>
+        <div class="rounded-2">Arredondamento 2</div>
+
+        <!-- 28 - BOX MODEL: MARGIN-->
+        <div class="margin">Margem</div>
+        <div class="margin-top">Margem superior</div>
+        <div class="margin-short">Margem + shorthand</div>
+
+        <!-- 29 - BOX MODEL: ELEMENTOS-->
+         <div class="box-model">
+            <p>Tenho todas as propridedades do BOX MODEL</p>
+         </div>
+        
+        <!-- 30 - TEXT-ALIGN-->
+        <p class="text-aligned">Alinhado a direita</p>
+        <div class="container-center">
+            <h2>Título centralizado</h2>
+            <p>Parágrafo Centralizado</p>
+        </div>
+
+        <!-- 31 - TEXT-DECORATION-->
+        <p class="underline">Sublinhado</p>
+        <p class="line-through">Riscado</p>
+        <a href="" class="remove-underline">Link sem underline</a>
+
+        <!-- 32 - TEXT-TRANSFORM-->
+        <p class="upper">upper case</p>
+        <p class="lower">LOWER CASE</p>
+
+        <!-- 33 - LETTER-SPACING-->
+        <h2 class="spacing">Espaçamento aplicado</h2>
+
+        <!-- 34 - FONTES-->
+        <p class="serif">Serif</p>
+        <p class="sans-serif">Sans Serif</p>
+        <p class="monospace">Monospace</p>
+        <p class="cursive">Cursive</p>
+        <p class="fantasy">Fantasy</p>
+
+        <!-- 35 - FONT STYLE-->
+        <p class="italic">Itálico</p>
+        <p class="oblique">Oblíquo</p>
+
+        <!-- 36 - FONT WEIGHT-->
+        <p class="thin">Fino</p>
+        <p class="bold">Forte</p>
+        <p class="bolder">Mais forte!</p>
+
+        <!-- 37 - FONT SIZE-->
+        <h4 class="small">Título pequeno</h4>
+        <h4 class="big">Título grande</h4>
+
+        <!-- 38 - DISPLAY-->
+        <!-- PADRÕES: DIV = BLOCK | SPAN = INLINE -->
+        <div class="inline-box">A</div>
+        <div class="inline-box">B</div>
+        <div class="inline-box">C</div>
+        <span class="block">X</span>
+        <span class="block">Y</span>
+
+        <!-- 39 - DISPLAY: OCULTANDO ELEMENTOS-->
+        <p class="invisible">Me encontre se puder!</p>
+
+        <!-- 40 - POSITION: STATIC-->
+        <!-- OBS: POSIÇÃO PADRÃO-->
+        <div class="static">
+            <span>Eu sou ESTÁTICO!</span>
+        </div>
+
+        <!-- 41 - POSITION: RELATIVE-->
+        <div class="relative">
+            <span>Eu sou RELATIVO!</span>
+        </div>
+        <p>Eu sou um parágrafo</p>
+
+        <!-- 42 - POSITION: ABSOLUTE-->
+        <div class="absolute">
+            <span>Eu sou ABSOLUTO!</span>
+        </div>
+        <p>Eu sou um parágrafo</p>
+
+        <!-- 43 - POSITION: RELATIVE COM ABSOLUTE-->
+        <div class="relative-container">
+            <div class="absolute-1"></div>
+            <div class="absolute-2"></div>
+        </div>
+
+        <!-- 44 - POSITION: FIXED-->
+        <!-- EXEMPLO: UTILIZADO PARA 
+         BARRA DE NAVEGAÇÃO FIXA-->
+        <div class="fixed">
+            <span>Elemento FIXO</span>
+        </div>
+
+        <!-- 45 - POSITION: STICKY-->
+        <!-- OBS: POSICIONADO APÓS ITEM 3.1-->
+        <!-- OBS 2: TEM POSIÇÃO FIXA A PARTIR DO
+        SCROLL OU POSIÇÃO INICIAL DEFINIDA-->
+
+        <!-- 46 - Z INDEX-->
+        <!-- OBS: UTILIZADO PARA SOBREPOSIÇÃO 
+        DE ELEMENTOS EM TELA-->
+        <div class="relative-container">
+            <div class="absolute-3"></div>
+            <div class="absolute-4"></div>
+            <div class="absolute-5"></div>    
+        </div>
+    </body>
+</html>

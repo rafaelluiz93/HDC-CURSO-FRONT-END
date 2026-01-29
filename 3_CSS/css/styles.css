@@ -1,0 +1,463 @@
+/* 4 - EXTERNAL CSS */
+body{
+    padding-bottom: 500px;
+}
+
+h3{
+    color:green;
+}
+
+/* 5.1 - ORDEM DO CSS: EXTERNAL */
+p{
+    color: teal;
+}
+
+/* 7.1 - Classes*/
+.paragraph{
+    background-color: black;
+    color: aqua;
+    padding: 5px;
+}
+
+/* 8.1 - ID*/
+#exclusive-title{
+    background-color: purple;
+    color: yellow;
+    padding: 10px;
+}
+
+/* 9.1 - ORDEM DOS SELETORES: HIERARQUIA */
+h2{
+    border-bottom: 2px solid red;
+}
+
+.titulo{
+    border-bottom: 3px solid blue;
+}
+
+#algum-titulo{
+    border-bottom: 4px solid green;
+}
+
+/*10.1 - CORES: NOMES*/
+/*atalho para lista de cores: CTRL + SPACE*/
+.color-name{
+    color: crimson;
+}
+
+/*11.1 - CORES: HEX*/
+/* hex simplificado: #FFFFFF = #FFF; #AA22BB = #A2B */
+.hex{
+    color: #db26c3;
+}
+
+.hex-2{
+    color: #747070;
+}
+
+/*15.1 BACKGROUND COLOR*/
+.bg{
+    background-color: #000;
+    color: #ffee00;
+}
+
+.bg-2{
+    background-color: rgb(33, 90, 246);
+    color: hsl(106, 78%, 54%);
+}
+
+/* 16.1 - BACKGROUND: OPACITY */
+.bg-opacity{
+    background-color: #205c0d;
+    opacity: 0.2;
+}
+
+/* 17.1 - BACKGROUND: OPACITY | RGBA */
+.rgba-opacity{
+    background-color: rgba(90, 120, 20, 0.2);
+    color: #000;
+}
+
+/* 18.1 - BACKGROUND: IMAGES */
+.bg-image{
+    background-image: url("../img/nature.jpg");
+    padding: 10px;
+    color: #FFF;
+}
+
+/* 19.1 - BACKGROUND: CENTER */
+.centered-bg,
+.not-centered-bg{
+    height: 400px;
+    width: 400px;
+    background-image: url("../img/bridge.jpg");
+}
+
+.centered-bg{
+    background-position: center;
+    background-size: cover;
+}
+
+/* 20.1 - BOX MODEL: HEIGHT / WIDTH */
+.height-width{
+    height: 200px;
+    width: 100px;
+    background-color: red;
+}
+
+.height-width-2{
+    height: 300px;
+    background-color: #333;
+}
+
+/* 21.1 - BOX MODEL: PADDING */
+.com-padding,
+.sem-padding{
+    background-color: #111;
+    color: #FFF;
+}
+
+.com-padding{
+    padding: 20px;
+    background-color: #555;
+}
+
+/* 22.1 - BOX MODEL: PADDING INDIVIDUAL */
+.padding-individual{
+    background-color: #222;
+   	color: #FFF;
+  	padding-top: 5px;
+  	padding-right: 20px;
+  	padding-bottom: 40px;
+  	padding-left: 10px; 	
+}
+
+/* 23.1 - BOX MODEL: SHORTHAND PROPERTIES */
+.shorthand-padding{
+    background-color: #444;
+   	color: #FFF;
+  	padding: 6px 12px 18px 24px;
+  	/* top - right - bottom - left */
+}
+
+.shorthand-padding-2{
+    background-color: #555;
+   	color: #FFF;
+  	padding: 10px 20px;
+  	/* top/bottom - right/left */
+}
+
+/* 24.1 - BOX MODEL: PADDING + WIDTH */
+.sem-border-box{
+    background-color: #444;
+    color: #FFF;
+    width: 400px;
+    padding: 50px;
+}
+
+.com-border-box{
+    background-color: #666;
+    color: #FFF;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;    
+}
+
+/* 25.1 - BOX MODEL: BORDAS */
+.border-1{
+    border: 5px solid red;
+    /*SINTAXE: espessura aparência cor*/
+    padding: 10px;
+}
+
+.border-2{
+    border: 2px dotted #931;
+    padding: 25px;    
+}
+
+/* 26.1 - BOX MODEL: BORDA INDIVIDUAL*/
+.border-left{
+    border-left: 3px solid red;
+    background-color: #222;
+    padding: 25px;
+}
+
+.border-bottom{
+    border-bottom: 5px double #399;
+    background-color: #222;
+    padding: 20px;
+}
+
+/* 27.1 - BOX MODEL: BORDA REDONDA*/
+.rounded{
+    border: 4px solid blue;
+    background-color: #000;
+    color: blue;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.rounded-2{
+    background-color: #000;
+    color: blue;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+/*28.1 - BOX MODEL: MARGIN*/
+.margin{
+    margin: 10px;
+    background-color: red;
+}
+
+.margin-top{
+    margin-top: 50px;
+    background-color: green;
+    padding: 10px;
+}
+
+.margin-short{
+    margin: 5px 10px 15px 20px;
+    background-color: blue;
+}
+
+/* 29.1 - BOX MODEL: ELEMENTOS */
+.box-model{
+    margin: 20px;
+    padding: 15px 25px;
+    border: 3px solid #845;
+    border-radius: 7px;
+    width: 200px;
+    height: 400px; 
+}
+
+/* 30.1 - TEXT-ALIGN */
+.text-aligned{
+    text-align: right;
+}
+
+.container-center{
+    text-align: center;
+    width: 300px;
+    border: 1px solid red;
+}
+
+/* 31.1 - TEXT-DECORATION */
+.underline{
+    text-decoration: underline;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+.remove-underline{
+    text-decoration: none;
+    color: red;
+}
+
+/* 32.1 - TEXT-TRANSFORM */
+.upper{
+    text-transform: uppercase;
+}
+
+.lower{
+    text-transform: lowercase;
+}
+
+/*33 - LETTER SPACING*/
+.spacing{
+    letter-spacing: 5px;
+}
+
+/*  34.1 - FONTES*/
+.serif{
+    font-family: serif;
+}
+
+.sans-serif{
+    font-family: sans-serif;
+}
+
+.monospace{
+    font-family: monospace;
+}
+
+.cursive{
+    font-family: cursive;
+}
+
+.fantasy{
+    font-family: fantasy;
+}
+
+/* 35.1 - FONT STYLE */
+.italic{
+    font-style: italic;
+}
+
+.oblique{
+    font-style: oblique;
+}
+
+/*36.1 - FONT WEIGHT*/
+.thin,
+.bold,
+.bolder{
+    font-family: Helvetica;
+}
+
+.thin{
+    font-weight: 100;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.bolder{
+    font-weight: 900;
+}
+
+/* 37.1 - FONT SIZE */
+.small{
+    font-size: 6px;
+}
+
+.big{
+    font-size: 78px;    
+}
+
+/* 38.1 - DISPLAY*/
+.inline-box{
+    width: 50px;
+    height: 50px;
+    background-color: #4F8;
+    margin: 10px;
+    display: inline-block;
+}
+
+.block{
+    background-color: #6741da;
+    margin: 10px;
+    display: block;
+}
+
+/*39.1 - DISPLAY: OCULTANDO ELEMENTOS*/
+.invisible{
+    display: none;
+}
+
+/*40.1 - POSITION: STATIC*/
+.static{
+    position: static;
+    background-color: #391;
+    color: #FFF;
+    width: 100px;
+    height: 100px;
+    /*ELEMENTO NÃO PODER SER MANIPULADO 
+    POR DIRECIONAIS: right, left, etc*/
+}
+
+/*41 - POSITION: RELATIVE*/
+.relative{
+    position: relative;
+    background-color: #224;
+    color: #FFF;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 40px;
+}
+
+/*42.1 - POSITION: ABSOLUTE*/
+.absolute{
+    position: absolute;
+    background-color: #964;
+    color: #FFF;
+    width: 100px;
+    height: 100px;
+    top: 2px;
+    right: 2px;
+    /*ELEMENTO FOI POSICIONADO DE FORMA FIXA 
+    NO CANTO SUPERIOR DIREITO DA TELA*/
+}
+
+/*43.1 - POSITION: RELATIVE COM ABSOLUTE*/
+.relative-container{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin-top: 120px;
+    position: relative;
+}
+
+.absolute-1,
+.absolute-2{
+    width: 50px;
+    height: 50px;
+    background-color: #422;
+    position: absolute;
+}
+
+.absolute-1{
+    top: 10px;
+    left: 10px;
+}
+
+.absolute-2{
+    bottom: 10px;
+    right: 10px;
+}
+
+/*44.1 - POSITION: FIXED*/
+.fixed{
+    width: 100px;
+    height: 100px;
+    background-color: #851;
+    border: 1px solid blue;
+    position: fixed;
+    top: 50px;
+    right: 100px;
+}
+
+/* 45.1 - POSITION: STICKY */
+
+.sticky{
+    width: 100px;
+    height: 100px;
+    background-color: #994;
+    border: 1px solid green;
+    position: sticky;
+    top: 2px;        
+}
+
+/*46.1 - Z-INDEX*/
+.absolute-3,
+.absolute-4,
+.absolute-5{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.absolute-3{
+    top: 0;
+    left: 0;
+    background-color: #cd3854;
+    z-index: 3;
+}
+
+.absolute-4{
+    top: 10px;
+    left: 10px;
+    background-color: #246;
+    z-index: 2;  
+}
+
+.absolute-5{
+    top: 40px;
+    left: 40px;
+    background-color: #453;
+    z-index: 1;    
+}
