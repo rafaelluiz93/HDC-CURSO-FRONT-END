@@ -76,6 +76,7 @@ function createTable(data) {
   });
 }
 
+// limitar uso de caracteres
 function validDigits(text) {
   return text.replace(/[^0-9,]/g, "");
 }
@@ -85,11 +86,12 @@ function calcImc(height, weight) {
   return imc;
 }
 
+//limpar inputs
 function cleanInputs() {
   heightInput.value = "";
   weightInput.value = "";
-  imcNumber.className = "";
-  imcInfo.className = "";
+  imcNumber.classList = "";
+  imcInfo.classList = "";
 }
 
 function showOrHideResults() {
@@ -111,17 +113,17 @@ createTable(data);
 
 calcBtn.addEventListener("click", (e) => {
   e.preventDefault();
-
+  // converter de vírgula para ponto
   const weight = +weightInput.value.replace(",", ".");
   const height = +heightInput.value.replace(",", ".");
 
   console.log(weight, height);
-
+  // verificar se peso e altura foram preenchidos
   if (!weight || !height) return;
-
+  // fórmula IMC
   const imc = calcImc(height, weight);
   let info;
-
+  // validar faixa de IMC, percorrendo as condições
   data.forEach((item) => {
     if (imc >= item.min && imc <= item.max) {
       info = item.info;
