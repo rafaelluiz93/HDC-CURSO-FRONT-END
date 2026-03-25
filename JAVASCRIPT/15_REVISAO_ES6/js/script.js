@@ -127,5 +127,61 @@ products.map((product) => {
 
 console.log(products)
 
+
+// TEMPLATE LITERALS
+const userName = "Rafael"
+const age = 32
+
+console.log(`Nome do usuário é ${userName.toUpperCase()} e ele tem ${age} anos`)
+
+
+
+//DESTRUCTURING
+
+//EXEMPLO 1
+const fruits = ["maçã", "mamão", "laranja"]
+const [f1, f2, f3] = fruits
+console.log(f1, f3) // exibe "maçã" e "laranja"
+
+//EXEMPLO 2
+const productDetails = {
+    name: "Mouse",
+    price: 39.99,
+    category: "Periférico",
+    color: "Cinza"
+}
+
+const {name: productName, price, category, color} = productDetails
+
+console.log (`O nome do produto é ${productName}, ele custa R$ ${price} e é da cor ${color}`)
+
+
+
+
+//SPREAD OPERATOR
+
+// EXEMPLO 1
+const a1 = [1, 2, 3]
+const a2 = [4, 5, 6]
+
+const a3 = [...a1, ...a2]
+
+console.log(a3)
+
+const a4 = [0, ...a3, 7]
+
+console.log(a4)
+
+
+
+// EXEMPLO 2
+const carName = {name: "Gol"}
+const carBrand = {brand: "VW"}
+const otherInfos = {km: 100000, price: 49999}
+
+const car = {...carName, ...carBrand, ...otherInfos}
+
+console.log(car)
+
 */
 
