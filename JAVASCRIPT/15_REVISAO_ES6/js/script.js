@@ -185,3 +185,46 @@ console.log(car)
 
 */
 
+// CLASSES
+class Product {
+    constructor(name, price){
+        this.name = name
+        this.price = price
+    }
+
+    productWithDiscount(discount) {
+        return this.price * ((100 - discount) / 100)
+    }
+}
+
+const shirt = new Product("Camisa Polo", 20)
+console.log(shirt)
+
+// execução do método para aplicação do desconto
+console.log(shirt.productWithDiscount(10))
+console.log(shirt.productWithDiscount(25))
+
+
+
+//HERANÇA (EXTENDS / SUPER) 
+
+// OBS: usar exemplo anterior (CLASSES)
+class ProductWithAttributes extends Product {
+    constructor(name, price, colors) {
+        super(name, price)
+        this.colors = colors
+    }
+
+    showColors() {
+        console.log("As cores são: ")
+        this.colors.forEach((color) => {
+            console.log(color)
+        })
+    }
+}
+
+const hat = new ProductWithAttributes ("Chapéu", 29.99, ["preto", "amarelo", "verde"])
+console.log(hat)
+console.log(hat.name)
+
+hat.showColors()
